@@ -50,6 +50,10 @@ app.post('/uploadAudio', (req, res) => {
 	});
 });
 
+app.get('/', (req, res) => {
+    res.send('Hello World');
+});
+
 // Handler for checking the value of a variable
 app.get('/checkVariable', (req, res) => {
 	res.json({ ready: shouldDownloadFile });
